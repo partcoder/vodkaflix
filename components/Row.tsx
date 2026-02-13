@@ -97,8 +97,8 @@ const Row: React.FC<RowProps> = ({ title, movies, onMovieClick, onRemove }) => {
                     <h4 className="text-white font-bold text-lg leading-tight mb-2 drop-shadow-md line-clamp-2">{movie.title}</h4>
                     <div className="flex items-center justify-between mt-2">
                       <div className="flex items-center gap-2">
-                        <span className="text-green-400 text-[10px] font-extrabold bg-green-900/30 px-2 py-0.5 rounded backdrop-blur-sm border border-green-500/20">{movie.matchScore}%</span>
-                        <span className="text-white/80 text-[10px] font-bold border border-white/20 px-2 py-0.5 rounded backdrop-blur-sm">{movie.year}</span>
+                        <span className="text-green-400 text-[10px] font-extrabold liquid-glass-light px-2 py-0.5 rounded backdrop-blur-sm border border-green-500/20">{movie.matchScore}%</span>
+                        <span className="text-white/80 text-[10px] font-bold liquid-glass-light px-2 py-0.5 rounded backdrop-blur-sm">{movie.year}</span>
                       </div>
                       <PlayCircle className="text-white w-8 h-8 hover:scale-110 transition-transform drop-shadow-lg" />
                     </div>

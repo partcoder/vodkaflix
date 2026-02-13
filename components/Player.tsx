@@ -46,7 +46,7 @@ const GlassDropdown: React.FC<GlassDropdownProps> = ({
       <button
         onClick={() => !disabled && setIsOpen(!isOpen)}
         disabled={disabled}
-        className={`flex items-center gap-2 px-3 py-1.5 bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 rounded-full text-[10px] md:text-xs font-bold transition-all active:scale-95 group ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+        className={`flex items-center gap-2 px-3 py-1.5 liquid-glass rounded-full text-[10px] md:text-xs font-bold transition-all active:scale-95 group ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
       >
         <span className="text-white truncate max-w-[150px]">{triggerLabel}</span>
         <ChevronDown size={14} className={`text-white/50 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
@@ -54,7 +54,7 @@ const GlassDropdown: React.FC<GlassDropdownProps> = ({
 
       {/* Bouncy Dropdown Panel */}
       <div
-        className={`absolute top-full mt-2 left-0 w-56 md:w-64 max-h-64 overflow-y-auto custom-scrollbar bg-[#1a1a1a]/95 backdrop-blur-2xl border border-white/10 rounded-2xl p-2 shadow-[0_10px_40px_rgba(0,0,0,0.5)] z-50 origin-top-left transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]
+        className={`absolute top-full mt-2 left-0 w-56 md:w-64 max-h-64 overflow-y-auto custom-scrollbar liquid-glass rounded-2xl p-2 shadow-[0_10px_40px_rgba(0,0,0,0.5)] z-50 origin-top-left transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]
         ${isOpen ? 'opacity-100 scale-100 translate-y-0 visible' : 'opacity-0 scale-50 -translate-y-4 invisible pointer-events-none'}`}
       >
         {options.map((opt) => (
@@ -216,7 +216,7 @@ const Player: React.FC<PlayerProps> = ({ movie, onClose }) => {
 
       {/* Floating Sleek Capsule Header */}
       <div className="absolute top-4 left-0 w-full z-50 flex justify-center pointer-events-none">
-        <div className="pointer-events-auto flex items-center justify-between w-auto max-w-5xl bg-black/60 backdrop-blur-xl rounded-full px-3 py-2 border border-white/10 shadow-2xl gap-4 transition-all animate-[scaleIn_0.4s_ease-out]">
+        <div className="pointer-events-auto flex items-center justify-between w-auto max-w-5xl liquid-glass rounded-full px-3 py-2 shadow-2xl gap-4 transition-all animate-[scaleIn_0.4s_ease-out]">
 
           <button
             onClick={onClose}
